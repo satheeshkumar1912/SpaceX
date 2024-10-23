@@ -1,0 +1,266 @@
+*{
+    margin:0;
+    padding:0;
+    /* box-sizing: border-box; */
+}
+
+body{
+    width:100vw;
+    height:100vh;
+}
+
+
+.logo-pic{
+    width: 200px;
+    height:100px;
+    margin-top: 0.5em;
+    margin-left: 10em;
+    float:left;
+   
+}
+
+
+
+/* Menu icon */
+.menu-icon {
+    float: right;
+    margin-right: 1rem;
+    margin-top: -0.5rem;
+    font-size: 20px; /* Increase the font size for visibility */
+    cursor: pointer;
+    color: white;
+    padding-left: 2rem;
+}
+
+
+
+
+.nav_options {
+    position:absolute;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    left:0;
+    margin-left:22em;
+    margin-top:0;
+}
+
+.nav-div {
+    
+    top:0;
+    margin-left: 20%;
+}
+
+.li{
+    padding: 0px 12px;
+    list-style: none;
+    font-family: sans-serif;
+    text-decoration: bold;
+    color:#ffffff;
+    font-size: 12px;
+    text-decoration: none;
+    font: Arial, Verdana, sans-serif;
+    color: #FFFFFF;
+    font-weight:bold;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    
+}
+
+.section1 {
+    position: relative;
+    background-image: url("https://sxcontent9668.azureedge.us/cms-assets/assets/Crew_9_outsidewater_DSC_0524_desktop_24f79ebf8a.jpg");
+    background: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height:100vh;
+    padding:0;
+    border:0;  
+    margin-right:0%; 
+}
+
+.title {
+    color:#ffffff;
+    font-size:40px;
+    font-weight: bold;
+    /* top:0;
+    padding-bottom: 10px;
+    padding-top: 0px; */
+}
+
+.box-info-1 {
+    position:relative;
+    color:#ffffff;
+    top:10em;
+    bottom:0;
+    left:5%;    
+    font: 48px/48px D-DIN-Bold, Arial, Verdana, sans-serif;
+}
+
+.box-info-2 {
+    position:relative;
+    color:#ffffff;
+    top:6.5em;
+    bottom:0;
+    left:5%;    
+    font: 48px/48px D-DIN-Bold, Arial, Verdana, sans-serif;
+}
+
+.button{
+    border:2px solid #ffffff;
+    padding:10px 30px 10px 30px;
+    font-size:15px;
+    font-weight: bold;
+    size:20px;
+}
+
+.section2 {
+    position: relative;
+    background-image: url("https://sxcontent9668.azureedge.us/cms-assets/assets/Eva_Suit_Desktop_alternate_1cf9bae18e.jpg");
+    background: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height:100vh;
+    padding:0;
+    border:0;
+    margin-right:0%;
+}
+
+.section3 {
+    position: relative;
+    background-image: url("https://sxcontent9668.azureedge.us/cms-assets/assets/Flight_5_Website_Desktop_1_12e2f537a0.jpg");
+    background: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height:100vh;
+    padding:0;
+    border:0;
+    margin-right:0%;
+}
+
+.section4 {
+    position: relative;
+    background-image: url("https://sxcontent9668.azureedge.us/cms-assets/assets/Hera_pad39a_DSC_2202_desktop_5cb5f51134.jpg");
+    background: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height:100vh;
+    padding:0;
+    border:0;
+    margin-right:0%;
+}
+
+.section5 {
+    position: relative;
+    background-image: url("https://sxcontent9668.azureedge.us/cms-assets/assets/PD_Splashdown_Crew_20240915_DSC_02307_Desktop_412628ab0e.jpg");
+    background: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height:100vh;
+    padding:0;
+    border:0;
+    margin-right:0%;
+}
+
+.section6 {
+    position: relative;
+    background-image: url("https://sxcontent9668.azureedge.us/cms-assets/assets/make_life_multiplanetary_desktop_3fa7cff73c.jpg");
+    background: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height:100vh;
+    padding:0;
+    border:0;
+    margin-right:0%;
+}
+
+.footers{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color:#ffffff;
+    background-color: black;
+    padding: 10px;
+    padding-left: 30%;
+    padding-right: 30%; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: cover;
+    width:100vw;
+
+    
+}
+
+.footer-items{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top:10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+
+
+
+/* Media Queries */
+
+/* Hide full menu, show hamburger on small screens */
+@media (max-width: 768px) {
+    .nav_options {
+        display: none;  /* Hide menu on mobile */
+        flex-direction: column;
+        background-color: rgba(0,0,0,0.8); /* Add background */
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh; /* Cover full screen */
+        text-align: center;
+    }
+
+    .menu-icon {
+        display: block;
+        font-size: 30px;
+        z-index: 1000;
+    }
+
+    .nav_options.show {
+        display: flex; /* Show when toggled */
+    }
+
+    .logo-pic {
+        margin-left: 1rem;
+    }
+
+    .section1, .section2, .section3, .section4, .section5, .section6 {
+        height: 50vh; /* Adjust height on mobile */
+        background-size: cover;
+    }
+
+    .box-info-1, .box-info-2 {
+        font-size: 18px;
+        top: 5em;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .button {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+
+    .footers {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 5%;
+    }
+}
